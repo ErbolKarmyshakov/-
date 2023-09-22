@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Next View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NextStoryboard" id="Y6W-OH-hqX" customClass="NextViewController" customModule="Storyboard2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.text.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZbE-MA-NQ2">
+                                <rect key="frame" x="20" y="61.666666666666657" width="100" height="97"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8tE-sI-zPO"/>
+                                    <constraint firstAttribute="height" constant="100" id="xAK-xN-MzT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.gymnastics" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-1g-Gfa">
+                                <rect key="frame" x="0.0" y="298.66666666666674" width="393" height="552"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="555" id="Kw2-ZT-5iO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUD-s8-fa5">
+                                <rect key="frame" x="311" y="279.66666666666669" width="42" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-&gt;"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-ht-CH9">
+                                <rect key="frame" x="-20" y="185" width="341" height="54.666666666666657"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Personal Fitness Clothes App">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.87846349300000004" green="1" blue="0.72657407259999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Fzk-1g-Gfa" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="9kk-DP-cdg"/>
+                            <constraint firstItem="MUD-s8-fa5" firstAttribute="top" secondItem="hcN-ht-CH9" secondAttribute="bottom" constant="40" id="Aww-li-V9M"/>
+                            <constraint firstItem="ZbE-MA-NQ2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="BYC-pg-xuN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MUD-s8-fa5" secondAttribute="trailing" constant="40" id="HNb-vT-oyk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hcN-ht-CH9" secondAttribute="trailing" constant="72" id="Hb2-w9-yWM"/>
+                            <constraint firstItem="hcN-ht-CH9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="-20" id="SaE-gY-uPU"/>
+                            <constraint firstAttribute="bottom" secondItem="Fzk-1g-Gfa" secondAttribute="bottom" id="Yq4-bd-i2w"/>
+                            <constraint firstItem="hcN-ht-CH9" firstAttribute="top" secondItem="ZbE-MA-NQ2" secondAttribute="bottom" constant="25" id="j8P-Lu-U86"/>
+                            <constraint firstItem="ZbE-MA-NQ2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="1" id="k35-W0-gPr"/>
+                            <constraint firstAttribute="trailing" secondItem="Fzk-1g-Gfa" secondAttribute="trailing" id="yqn-Gs-9x9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="Fzk-1g-Gfa" id="u8z-Bb-z47"/>
+                        <outlet property="nextButton" destination="MUD-s8-fa5" id="oP7-m5-ZBe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="figure.gymnastics" catalog="system" width="128" height="100"/>
+        <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
